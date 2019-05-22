@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,500,600,900&display=swap');
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  background-color: #f5f6f7;
+}
+
+a {
+  color: inherit;
+}
+
+/* Top Bar */
+#top-bar {
+  background-color: #f5f6f7;
+  text-align: center;
+  padding: 20px 0;
+  color: #5E6573;
+  position: relative;
+}
+
+#top-bar h1 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  font-weight: 900;
+  right: 50px;
+  font-size: 40px;
+}
+
+/* Main Banner */
+#main-banner {
+  background-image: url('images/hulu-banner-bg.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: bottom;
+  padding: 200px 0 50px 0;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s;
+  z-index: 10;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
+
+.trial-button {
+  display: none;
+}
+
+.trial-button,
+.login,
+.trial-paragraph {
+  background: transparent;
+  font-weight: 600;
+  font-size: 13.5px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 20px;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.logo {
+  width: 60px;
+  fill: white;
+}
+
+/* Scroll Nav */
+.scroll-nav {
+  position: fixed;
+  background: #fff;
+}
+
+.black-logo {
+  fill: black;
+}
+
+.black-button {
+  background: #000;
+  padding: 20px 30px;
+}
+
+/* Content */
+.content {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: -5px;
+  margin-bottom: 40px;
+}
+
+.content h5 {
+  font-size: 26px;
+  width: 720px;
+  font-weight: 300;
+}
+
+.content .services {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.content button {
+  padding: 20px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #fcfcfc;
+}
+
+.content .terms {
+  font-size: 10px;
+  margin-top: 20px;
+  color: #c9c9c9;
+}
+
+.plan-options {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fcfcfc;
+  text-align: center;
+}
+
+.plan-options button {
+  border: 1px solid #fcfcfc;
+  background: transparent;
+  padding: 20px;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+
+.plan-options i {
+  font-size: 30px;
+  color: #fcfcfc;
+}
+
+/* Movie Section */
+#movie-section {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#movie-section img {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Plan Section */
+#plan-section {
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#plan-section h1 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#plan-section p {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #5E6573;
+}
+
+.plans {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.plan {
+  background: #fcfcfc;
+  width: 29%;
+  margin: 40px 20px 20px 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+  transition: all .3s;
+}
+
+.plan h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.price {
+  font-size: 60px !important;
+  font-weight: 300 !important;
+}
+
+.top {
+  padding: 40px 0 30px 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  background: #fff;
+}
+
+.top p {
+  font-weight: 400 !important;
+}
+
+.top button {
+  margin: 30px 0;
+  padding: 18px 20%;
+  background: transparent;
+  border: 2px solid #999;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+.month {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.learn-more {
+  position: absolute !important;
+  font-size: 14px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.list,
+.addons,
+.available {
+  background-color: #fcfcfc;
+}
+
+.plan ul {
+  list-style-image: url('https://www.hulu.com/static/hitch/static/icons/icon_green_check.svg');
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.plan ul li {
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 25px;
+  color: #666;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.available {
+  transform: scaleY(0);
+  display: none;
+  transform-origin: top;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.available h5 {
+  border-bottom: 1px solid #ddd;
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5E6573;
+}
+
+.available ul {
+  list-style: none;
+}
+
+.addons {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.addons a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Free Trial Section */
+.free-trial {
+  background: #fff;
+  display: flex;
+  position: relative;
+  height: 350px;
+}
+
+.free-trial .left {
+  width: 600px;
+  margin-left: 300px;
+}
+
+.free-trial .left h1 {
+  font-weight: 300;
+  margin: 50px 0 20px 0;
+}
+
+.free-trial .left button {
+  background: #262930;
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.free-trial img {
+  width: 380px;
+  position: absolute;
+  bottom: 0px;
+  right: 360px;
+}
+
+/* Footer */
+footer {
+  background: #EBEDF2;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 300px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #889;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.links ul li {
+  padding: 0 5px;
+  margin: 5px;
+}
+
+.copyright {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Hovers */
+button {
+  transition: all .2s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 5px rgba(0,0,0,.25);
+}
+
+.trial-paragraph:hover,
+.login:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.plan:hover {
+  transform: translateY(-30px);
+}
+
+.plan::before {
+  content: '';
+  height: 4px;
+  background: linear-gradient(to right,  #07ABA2,#92ED8D);
+  width: 0%;
+  top: -3px;
+  left: 0;
+  position: absolute;
+  transition: all .3s;
+}
+
+.plan:hover::before {
+  width: 100%;
+}
+
+.plan:hover button {
+  color: #D8D9DA;
+  background: #262930;
+  border: none;
+}
+
+/* Colors */
+.dark {
+  color: #333;
+}
